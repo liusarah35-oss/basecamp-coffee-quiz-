@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 3 - Bold & Dramatic</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    max-width: 560px;
+    width: 100%;
+    padding: 48px;
+  }
+  .tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ff6b35;
+    margin-bottom: 24px;
+    display: block;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    padding: 18px 22px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover { border-color: #ff6b35; color: #fff; background: rgba(255,107,53,0.05); }
+  .num { font-size: 11px; font-weight: 700; color: #333; min-width: 20px; }
+  .option:hover .num { color: #ff6b35; }
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .progress-text { font-size: 12px; color: #444; font-weight: 700; letter-spacing: 1px; }
+  .bar { flex: 1; margin: 0 20px; height: 2px; background: #1a1a1a; }
+  .bar-fill { width: 40%; height: 100%; background: #ff6b35; }
+  .label { font-size: 11px; color: #333; letter-spacing: 2px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="tag">Style 3 — Bold & Dramatic</span>
+    <h1>You find $20 on the street. What do you do?</h1>
+    <div class="options">
+      <div class="option"><span class="num">01</span> Spend it on something wild, immediately</div>
+      <div class="option"><span class="num">02</span> Treat yourself to something sweet</div>
+      <div class="option"><span class="num">03</span> Save it — you already have everything you need</div>
+      <div class="option"><span class="num">04</span> Keep it for a late-night snack run</div>
+      <div class="option"><span class="num">05</span> Put it toward something practical</div>
+    </div>
+    <div class="footer">
+      <span class="progress-text">2 / 5</span>
+      <div class="bar"><div class="bar-fill"></div></div>
+      <span class="label">Coffee Quiz</span>
+    </div>
+  </div>
+</body>
+</html>

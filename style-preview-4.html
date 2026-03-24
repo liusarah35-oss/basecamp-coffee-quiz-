@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 4 - Warm & Cozy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f5ede0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fffcf8;
+    border-radius: 16px;
+    padding: 48px 44px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(139,90,43,0.08);
+    border: 1px solid #ede5d8;
+  }
+  .eyebrow {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b07d50;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #3b2a1a;
+    line-height: 1.45;
+    margin-bottom: 32px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    background: #fdf6ee;
+    border: 1.5px solid #e8d9c5;
+    border-radius: 10px;
+    padding: 15px 18px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #5c3d20;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option:hover { background: #fff3e4; border-color: #c8894a; color: #3b2a1a; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; border: 2px solid #c8894a; flex-shrink: 0; }
+  .footer {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .cups { display: flex; gap: 6px; }
+  .cup { font-size: 18px; opacity: 0.3; }
+  .cup.filled { opacity: 1; }
+  .progress-text { font-size: 13px; color: #b07d50; margin-left: auto; font-weight: 600; }
+  .label { font-size: 11px; color: #c8a882; letter-spacing: 1.5px; text-transform: uppercase; margin-left: 8px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">Style 4 — Warm & Cozy</div>
+    <h1>You find $20 on the street. What do you do?</h1>
+    <div class="options">
+      <div class="option"><span class="dot"></span> Spend it on something wild, immediately</div>
+      <div class="option"><span class="dot"></span> Treat yourself to something sweet</div>
+      <div class="option"><span class="dot"></span> Save it — you already have everything you need</div>
+      <div class="option"><span class="dot"></span> Keep it for a late-night snack run</div>
+      <div class="option"><span class="dot"></span> Put it toward something practical</div>
+    </div>
+    <div class="footer">
+      <div class="cups">
+        <span class="cup filled">☕</span>
+        <span class="cup filled">☕</span>
+        <span class="cup">☕</span>
+        <span class="cup">☕</span>
+        <span class="cup">☕</span>
+      </div>
+      <span class="progress-text">Question 2 of 5</span>
+    </div>
+  </div>
+</body>
+</html>

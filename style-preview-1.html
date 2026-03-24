@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 1 - Playful & Colorful</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  .badge {
+    background: #667eea;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #2d2d2d;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .subtitle {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .options { display: flex; flex-direction: column; gap: 12px; }
+  .option {
+    border: 3px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d2d2d;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option:hover { border-color: #667eea; background: #f5f3ff; transform: translateY(-2px); }
+  .option .emoji { font-size: 24px; }
+  .progress { margin-top: 30px; }
+  .progress-label { font-size: 13px; color: #999; margin-bottom: 8px; font-weight: 700; }
+  .progress-bar { background: #f0f0f0; border-radius: 10px; height: 8px; }
+  .progress-fill { background: linear-gradient(90deg, #667eea, #f093fb); width: 40%; height: 100%; border-radius: 10px; }
+  .label { color: #aaa; font-size: 12px; margin-top: 24px; text-align: center; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">Style 1 — Playful & Colorful</span>
+    <h1>You find $20 on the street. What do you do?</h1>
+    <p class="subtitle">Question 2 of 5</p>
+    <div class="options">
+      <div class="option"><span class="emoji">🎢</span> Spend it on something wild, immediately</div>
+      <div class="option"><span class="emoji">🍰</span> Treat yourself to something sweet</div>
+      <div class="option"><span class="emoji">🧘</span> Save it — you already have everything you need</div>
+      <div class="option"><span class="emoji">🌙</span> Keep it for a late-night snack run</div>
+      <div class="option"><span class="emoji">📋</span> Put it toward something practical</div>
+    </div>
+    <div class="progress">
+      <div class="progress-label">Progress</div>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <div class="label">What's Your Coffee Personality?</div>
+  </div>
+</body>
+</html>

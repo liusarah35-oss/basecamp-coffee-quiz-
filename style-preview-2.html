@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 2 - Minimal & Clean</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    max-width: 560px;
+    width: 100%;
+    padding: 56px 48px;
+    border: 1px solid #ebebeb;
+  }
+  .step {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #111;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  .options { display: flex; flex-direction: column; gap: 0; }
+  .option {
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.15s;
+  }
+  .option:first-child { border-top: 1px solid #f0f0f0; }
+  .option:hover { color: #111; }
+  .option:hover .arrow { opacity: 1; }
+  .arrow { opacity: 0; transition: opacity 0.15s; color: #111; }
+  .footer {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #e0e0e0; }
+  .dot.active { background: #111; }
+  .label { font-size: 11px; color: #bbb; letter-spacing: 2px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="step">02 / 05</div>
+    <h1>You find $20 on the street. What do you do?</h1>
+    <div class="options">
+      <div class="option">Spend it on something wild, immediately <span class="arrow">→</span></div>
+      <div class="option">Treat yourself to something sweet <span class="arrow">→</span></div>
+      <div class="option">Save it — you already have everything you need <span class="arrow">→</span></div>
+      <div class="option">Keep it for a late-night snack run <span class="arrow">→</span></div>
+      <div class="option">Put it toward something practical <span class="arrow">→</span></div>
+    </div>
+    <div class="footer">
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="label">Style 2 — Minimal</div>
+    </div>
+  </div>
+</body>
+</html>
